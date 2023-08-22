@@ -1,0 +1,42 @@
+package com.xyx.config;
+
+import com.github.wxpay.sdk.WXPayConfig;
+
+import java.io.InputStream;
+
+/**
+ * @author: xyx & yx282947664@163.com
+ * @date 2023/8/22 022 12:35
+ * @description: TODO
+ */
+public class MyPayConfig implements WXPayConfig {
+    @Override
+    public String getAppID() {
+        return "wx632c8f211f8122c6";
+    }
+
+    @Override
+    public String getMchID() {
+        return "1497984412";
+    }
+
+    @Override
+    public String getKey() {
+        return "sbNCm1JnevqI36LrEaxFwcaT0hkGxFnC";
+    }
+
+    @Override
+    public InputStream getCertStream() {
+        return null;
+    }
+
+    @Override
+    public int getHttpConnectTimeoutMs() {
+        return 0;
+    }
+
+    @Override
+    public int getHttpReadTimeoutMs() {
+        return 0;
+    }
+}
